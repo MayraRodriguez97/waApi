@@ -12,17 +12,11 @@ return [
     | other UI elements where an application name needs to be displayed.
     |
     */
- 
-
-    'waapi_instance_id' => env('WAAPI_INSTANCE_ID'),
-    'waapi_token' => env('WAAPI_TOKEN'),
-
-    'name' => env('APP_NAME', 'Laravel'),
-
+    // ... otras configuraciones ...
+    
     // ... resto del archivo ...
 
-];
-
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -35,7 +29,7 @@ return [
     |
     */
 
-   [ 'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -131,5 +125,10 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    'waapi' => [
+    'base_url' => env('WAAPI_URL', 'https://waapi.app/api/v1'),
+    'api_key' => env('WAAPI_TOKEN'),
+],
 
 ];

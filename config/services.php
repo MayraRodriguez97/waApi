@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'waapi' => [
+        'base_url' => env('WAAPI_BASE_URL', 'https://waapi.app/api/v1'),
+        'api_key' => env('WAAPI_TOKEN'),
+    ],
+
 ];
